@@ -1,0 +1,37 @@
+[
+  {
+    "name": "nika",
+    "gender": "female",
+    "age": "78"
+  },
+  {
+    "name": "der",
+    "gender": "female",
+    "age": "77"
+  },
+  {
+    "name": "brit",
+    "gender": "female",
+    "age": "44"
+  },
+  {
+    "name": "vika",
+    "gender": "female",
+    "age": "22"
+  },
+  {
+    "name": "fila",
+    "gender": "female",
+    "age": "44"
+  },
+  {
+    "name": "lada",
+    "gender": "female",
+    "age": "34"
+  },
+  {
+    "name": "tony",
+    "gender": "male",
+    "age": "45"
+  }
+]
