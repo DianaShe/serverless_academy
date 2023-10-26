@@ -2,8 +2,6 @@ const axios = require("axios");
 
 const BASE_URL = "http://api.openweathermap.org/data/2.5/forecast?units=metric";
 
-const API_KEY = "509c5e82e4b16cc50074073127fe3923"
-
 const LOCATION = {
   lat: 50.51,
   lon: 30.8,

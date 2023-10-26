@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const getForcastForInterval = require('./services/weatherAPI');
 const { getPrivatCurrency } = require('./services/privatBankAPI');
 const getMonoCurrency = require('./services/monoBankAPI');
-const TOKEN = "6930013881:AAGsQ2tlptMz3k7TKvWusM2r9LDBIdVstqI"
+
 
 const bot = new TelegramBot(TOKEN, {polling: true});
 
