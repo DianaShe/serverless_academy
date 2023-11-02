@@ -28,13 +28,11 @@ const fetchData = async (url) => {
 
 const array = [
   "https://jsonbase.com/sls-team/json-793",
-  "http://localhost:3000",
   "https://jsonbase.com/sls-team/json-955",
   "https://jsonbase.com/sls-team/json-231",
   "https://jsonbase.com/sls-team/json-931",
   "https://jsonbase.com/sls-team/json-93",
   "https://jsonbase.com/sls-team/json-342",
-  "http://localhost:3000",
   "https://jsonbase.com/sls-team/json-770",
   "https://jsonbase.com/sls-team/json-491",
   "https://jsonbase.com/sls-team/json-281",
@@ -49,7 +47,6 @@ const array = [
   "https://jsonbase.com/sls-team/json-521",
   "https://jsonbase.com/sls-team/json-350",
   "https://jsonbase.com/sls-team/json-64",
-  "http://localhost:3000",
 ];
 
 const getData = async (urls, key) => {
@@ -60,7 +57,15 @@ const getData = async (urls, key) => {
 
     if (!res) {
       for (let index = 1; index < 3; index++) {
-        await fetchData(url);
+        const result = await fetchData(url);
+        if (result && result[KEY]) {
+          countTrue += 1;
+          return
+        }
+        if (result && !res[KEY]) {
+          countFalse += 1;
+          return
+        }
       }
     } else if (res[KEY]) {
       countTrue += 1;
