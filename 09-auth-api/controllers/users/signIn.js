@@ -3,7 +3,7 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 const HttpError = require("../../utilities/HttpError");
 
-const SECRET = process.env.SECRET || "wertyujcvbnmfyuiokjhcvbnhjk";
+const SECRET = process.env.SECRET;
 
 const signIn = async (req, res) => {
   const { email, password } = req.body;
